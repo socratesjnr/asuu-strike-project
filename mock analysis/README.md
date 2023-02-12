@@ -4,11 +4,11 @@ This project aims to analyze the impact of the ASUU strike on students at the Un
 
 ## Contents
 
--Data Preprocessing
--Exploratory Data Analysis (EDA)
--Model Building
--Evaluation
--Communication
+- Data Preprocessing
+- Exploratory Data Analysis (EDA)
+- Model Building
+- Evaluation
+- Communication
 
 ## Data Preprocessing
 
