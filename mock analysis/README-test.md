@@ -14,6 +14,10 @@ This project aims to analyze the impact of the ASUU strike on students at the Un
 
 The first step in this project is to clean the data and prepare it for analysis. This includes removing all non-UNILAG students, dropping unrequired columns, and renaming the columns to make them more descriptive. Outliers such as 100 level students and CGPA values of 0 are also removed. A target variable (cgpa_change) is calculated as the difference between the CGPA before and after the strike.
 
+### Observations
+
+1. Survey should be checked for inconsistencies before publishing. Especially the "Level" question.
+
 ## Exploratory Data Analysis (EDA)
 
 The EDA stage involves analyzing the data visually to gain insights into the relationships between variables and to identify patterns and trends. Various plots such as histograms, bar plots, and scatter plots can be used to explore the data.
