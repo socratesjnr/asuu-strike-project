@@ -1,6 +1,6 @@
 # ASUU Strike Impact Mock Analysis
 
-This project aims to analyze the impact of the ASUU strike on students at the University of Lagos (UNILAG). The goal is to gain insights into how the strike affected the students, their academic performance, and overall wellbeing. This is a mock analysis of the project before data is collected from the public.
+This project aims to analyze the impact of the ASUU strike on students at the University of Lagos (UNILAG). The goal is to gain insights into how the strike affected the students, their academic performance, and overall wellbeing. This is a mock analysis of the project before data is collected from the public. The purpose is to improve analysis for the main project by finding out what works and doesn't.
 
 ## Contents
 
