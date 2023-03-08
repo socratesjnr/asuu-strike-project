@@ -53,9 +53,9 @@ project analysis
 
 ## Authors
 
-- John Doe (Project Manager)
-- Jane Smith (Data Analyst)
-- James Lee (Data Scientist)
+- Oluwaseyi Adaramola (Project Manager)
+- Malik Akintola (Data Analyst)
+- Farook Ajose (Data Scientist)
 
 ## Acknowledgments
 
