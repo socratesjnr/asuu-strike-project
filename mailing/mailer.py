@@ -14,7 +14,7 @@ with open("mailing/mail.txt", "r") as mail_file:
 
 
 msg = EmailMessage()
-msg["Subject"] = "Student Survey: Effects of Strike"
+msg["Subject"] = "Invitation to Participate in ASUU Strike Effect Survey"
 msg["From"] = MY_EMAIL
 msg["To"] = TARGET_EMAIL
 msg.set_content(text_body)
