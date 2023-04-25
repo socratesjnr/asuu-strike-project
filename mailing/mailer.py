@@ -1,6 +1,4 @@
-import os
 import smtplib
-import imghdr
 from email.message import EmailMessage
 
 MY_EMAIL = input("Enter sender email address: ")
