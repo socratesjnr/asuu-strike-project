@@ -6,10 +6,10 @@ MY_PASSWORD = input("Enter sender password or application password: ")
 
 TARGET_EMAIL = input("Enter recipient email address: ")
 
-with open("mail.html", "r") as mail_file:
+with open("mailing/mail.html", "r") as mail_file:
     html_body = mail_file.read()
 
-with open("mail.txt", "r") as mail_file:
+with open("mailing/mail.txt", "r") as mail_file:
     text_body = mail_file.read()
 
 
