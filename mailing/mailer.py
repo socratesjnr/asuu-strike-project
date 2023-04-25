@@ -4,7 +4,7 @@ from email.message import EmailMessage
 MY_EMAIL = input("Enter sender email address: ")
 MY_PASSWORD = input("Enter sender password or application password: ")
 
-TARGET_EMAIL = input("Enter recipient email address: ")
+TARGET_EMAIL = input("Enter recipient(s) email address: ")
 
 with open("mailing/mail.html", "r") as mail_file:
     html_body = mail_file.read()
@@ -27,3 +27,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
         print(f"Successfully sent the mail! Check!")
     except smtplib.SMTPConnectError:
         print(f"Hmmn. Something went wrong with the connection.")
+    except smtplib.SMTPAuthenticationError:
+        print(
+            "Failed to send email. Your account has 2-factor Authentication enabled. You need to remove or create an application password instead. Learn more at https://support.google.com/mail/?p=InvalidSecondFactor"
+        )
