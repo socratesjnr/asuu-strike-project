@@ -25,7 +25,8 @@ To run the code for this project, you will need to have the following software i
 
 ## Data Collection
 
-We will be using a Google Form to collect data for this project. The link to the form will be distributed to relevant stakeholders, including students, lecturers, and administrators.
+We will be using a Google Form to collect data for this project. The link to the form will be distributed to relevant stakeholders, including students, lecturers, and administrators. 
+The data collection for this project is live, to participate you can click on this : https://forms.gle/1XZBC5EkMbsRTYJ4A to fill the google form.
 
 ## File Structure
 
@@ -36,7 +37,16 @@ mock analysis
 │── test_eda.ipynb   # Jupyter Notebook for exploratory data analysis
 │── test_modeling.ipynb      # Jupyter Notebook for modeling and analysis
 │── test_dashboard.pbix      # Power BI file for visualizing the data
-└── README.md               # Project description and instructions
+└── README.md                # Project description and instructions
+├── Team_Management
+│   ├── assigned_roles.csv      # Roles assigned to team members 
+│   └── role_assignment.ipynb  # Roles assigned to team members 
+    └── role_summary.csv   # Description of roles
+├── Mailing 
+│   ├──  Bounced_email_address     # Invalid mails 
+│   └──  Student_distribution.ip # Distribution of student mails 
+    └──  Student_mails.csv    # File containing the student mail 
+    └──  Valid_student_mails.com     # Mailing list 
 
 project analysis
 ├── data
@@ -56,6 +66,7 @@ project analysis
 - Oluwaseyi Adaramola (Project Manager)
 - Malik Akintola (Data Analyst)
 - Farook Ajose (Data Scientist)
+- Ibukun Akinleye 
 
 ## Acknowledgments
 
