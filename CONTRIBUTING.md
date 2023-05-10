@@ -3,6 +3,10 @@
 
 We welcome contributions from the community to help make our investigation of the impact of the 2022 ASUU strike on academic performance at the University of Lagos even better! Whether you're a team member or an open source contributor, there are many ways to get involved.
 
+## Current Status
+
+The project is ongoing and you can view more infomation on the timelines, status, and team members [here](https://docs.google.com/spreadsheets/d/1KOZ8djiRDPjkNfuNQMtF75yCSue4W52NH50ica-qXPk/edit#gid=0).
+
 ## Issues and Bugs
 
 During the course of the project, we may encounter issues or bugs that affect our analysis and results. Some examples of issues and bugs that may arise include:
