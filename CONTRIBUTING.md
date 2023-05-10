@@ -3,6 +3,18 @@
 
 We welcome contributions from the community to help make our investigation of the impact of the 2022 ASUU strike on academic performance at the University of Lagos even better! Whether you're a team member or an open source contributor, there are many ways to get involved.
 
+## Table of Contents
+
+- [Contributing to the Project](#contributing-to-the-project)
+  - [Table of Contents](#table-of-contents)
+  - [Current Status](#current-status)
+  - [Issues and Bugs](#issues-and-bugs)
+  - [Pull Requests](#pull-requests)
+  - [Style Adherence](#style-adherence)
+    - [Code Style Guide](#code-style-guide)
+    - [Visualization Style Guide](#visualization-style-guide)
+  - [Communication](#communication)
+
 ## Current Status
 
 The project is ongoing and you can view more infomation on the timelines, status, and team members [here](https://docs.google.com/spreadsheets/d/1KOZ8djiRDPjkNfuNQMtF75yCSue4W52NH50ica-qXPk/edit#gid=0).
@@ -35,17 +47,17 @@ When creating a pull request, please provide as much detail as possible about th
 
 If you'd like to contribute data, please ensure that the data you're contributing is accurate and relevant to our investigation. If you're unsure about whether your data is appropriate, please reach out to one of our team members for guidance.
 
-## Code Style
+## Style Adherence
+
+### Code Style Guide
 
 When contributing code to the project, please follow the code style guidelines outlined in our [code style guide](CODE_STYLEGUIDE.md). This will help ensure that the code is consistent and easy to read for all team members and contributors.
 
-## Visualization Style Guide
+### Visualization Style Guide
 
 To maintain consistency in the visualizations across the project, we kindly ask that all contributors adhere to the guidelines set out in the [Visualisation Style Guide](VIZ_STYLEGUIDE.md). This guide outlines the colors, fonts, and other design elements that we will use in our visualizations to ensure that all charts look similar and are part of the same project.
 
 When creating visualizations, please reference the Visualisation Style Guide and use the specified colors, fonts, and design elements.
-
-If you have any questions about the Visualisation Style Guide or need help using it, please feel free to reach out to the project leads or create an issue on the GitHub repository.
 
 ## Communication
 
