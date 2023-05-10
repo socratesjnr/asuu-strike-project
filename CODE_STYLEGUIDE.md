@@ -26,6 +26,21 @@ This programming style guide is intended to provide guidelines for writing clear
    exp_sample.to_csv("ExpandedSample.csv", index=False)
    ```
 
+    Note: Markdown files (`.md`) are an exception to this rule. Use UPPERCASE letters separated by underscores instead.
+
+    ```markdown
+    ✔ Do this
+        CODE_STYLEGUIDE.md
+        README.md
+        CONTRIBUTORS.md
+
+    ❌ Not this
+        Code Style Guide.md
+        code_style_guide.md
+        readme.md
+        contributrs.md
+    ```
+
 3. Use singular nouns for variables that represent a single item and plural nouns for variables that represent collections of items.
 
       ```python
