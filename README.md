@@ -6,6 +6,19 @@ Investigating the Effect of the 2022 ASUU Strike on the Academic Performance of 
 
 This project aims to investigate the impact of the 2022 ASUU strike on the academic performance of students at the University of Lagos. We plan to use Python and Power BI for data analysis and visualization, and will collect data via a Google Form. The project will consist of four phases: planning and preparation, data collection and preparation, modeling and analysis, and reporting and presentation.
 
+## Table of Contents
+
+- [asuu-strike-project](#asuu-strike-project)
+  - [Project Description](#project-description)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installing](#installing)
+  - [Data Collection](#data-collection)
+  - [File Structure](#file-structure)
+  - [Authors](#authors)
+  - [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 ### Prerequisites
@@ -25,8 +38,8 @@ To run the code for this project, you will need to have the following software i
 
 ## Data Collection
 
-We will be using a Google Form to collect data for this project. The link to the form will be distributed to relevant stakeholders, including students, lecturers, and administrators. 
-The data collection for this project is live, to participate you can click on this : https://forms.gle/1XZBC5EkMbsRTYJ4A to fill the google form.
+We will be using a Google Form to collect data for this project. The link to the form will be distributed to relevant stakeholders, including students, lecturers, and administrators.
+The data collection for this project is live, to participate you can click on this : <https://forms.gle/1XZBC5EkMbsRTYJ4A> to fill the google form.
 
 ## File Structure
 
@@ -66,7 +79,7 @@ project analysis
 - Oluwaseyi Adaramola (Project Manager)
 - Malik Akintola (Data Analyst)
 - Farook Ajose (Data Scientist)
-- Ibukun Akinleye 
+- Ibukun Akinleye
 
 ## Acknowledgments
 
