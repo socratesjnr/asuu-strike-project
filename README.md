@@ -44,42 +44,50 @@ The data collection for this project is live, to participate you can click on th
 ## File Structure
 
 ```python
-mock analysis
-│── sample.csv        # Raw data collected from Google Forms
-│── expanded_sample.csv # Cleaned and expamded data for analysis
-│── test_eda.ipynb   # Jupyter Notebook for exploratory data analysis
-│── test_modeling.ipynb      # Jupyter Notebook for modeling and analysis
-│── test_dashboard.pbix      # Power BI file for visualizing the data
-└── README.md                # Project description and instructions
-├── Team_Management
-│   ├── assigned_roles.csv      # Roles assigned to team members 
-│   └── role_assignment.ipynb  # Roles assigned to team members 
-    └── role_summary.csv   # Description of roles
-├── Mailing 
-│   ├──  Bounced_email_address     # Invalid mails 
-│   └──  Student_distribution.ip # Distribution of student mails 
-    └──  Student_mails.csv    # File containing the student mail 
-    └──  Valid_student_mails.com     # Mailing list 
+asuu-strike-project
+│   README.md               # Project description and instructions
+│   CONTRIBUTING.md         # Guidelines for contributing to the project
+│   CODE_STYLEGUIDE.md      # Guidelines for code style and formatting
+│   LICENSE.md              # License for the project
+|   .idea                   # Directory to store project-specific settings
+│   .gitignore              # Files and directories to be ignored by Git
+│
+├── mailing
+│   ├── bounced_email_address.csv     # Invalid mails
+│   ├── student_distribution.ipynb   # Distribution of student mails
+│   ├── student_mails.csv            # File containing the student mail
+│   └── valid_student_mails.csv      # Mailing list
+│
+├── mock analysis
+│   ├── sample.csv                # Raw data collected from Google Forms
+│   ├── expanded_sample.csv       # Cleaned and expanded data for analysis
+│   ├── test_eda.ipynb            # Jupyter Notebook for exploratory data analysis
+│   ├── test_modeling.ipynb        # Jupyter Notebook for modeling and analysis
+│   ├── test_dashboard.pbix        # Power BI file for visualizing the data
+│   └── README.md                 # Description of the mock analysis folder
+│
+├── team-management
+│   ├── assigned_roles.csv        # Roles assigned to team members
+│   ├── role_assignment.ipynb     # Jupyter Notebook for assigning roles to team members
+│   └── role_summary.csv          # Description of roles
+│
+└── project analysis
+    ├── data
+    │   ├── raw_data.csv           # Raw data collected from Google Forms
+    │   └── cleaned_data.csv       # Cleaned data ready for analysis
+    ├── analysis
+    │   ├── exploratory_data_analysis.ipynb   # Jupyter Notebook for exploratory data analysis
+    │   └── modeling.ipynb          # Jupyter Notebook for modeling and analysis
+    ├── results
+    │   └── dashboard.pbix          # Power BI file for visualizing the data
+    ├── requirements.txt            # Required Python packages for the project
+    └── README.md                   # Description of the project analysis folder
 
-project analysis
-├── data
-│   ├── raw_data.csv        # Raw data collected from Google Forms
-│   └── cleaned_data.csv    # Cleaned data ready for analysis
-├── analysis
-│   ├── exploratory_data_analysis.ipynb   # Jupyter Notebook for exploratory data analysis
-│   └── modeling.ipynb      # Jupyter Notebook for modeling and analysis
-├── results
-│   └── dashboard.pbix      # Power BI file for visualizing the data
-├── requirements.txt        # Required Python packages for the project
-└── README.md               # Project description and instructions
 ```
 
 ## Authors
 
-- Oluwaseyi Adaramola (Project Manager)
-- Malik Akintola (Data Analyst)
-- Farook Ajose (Data Scientist)
-- Ibukun Akinleye
+- [Farook Ajose](https://github.com/fkajose)
 
 ## Acknowledgments
 
