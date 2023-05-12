@@ -14,6 +14,7 @@ This project aims to investigate the impact of the 2022 ASUU strike on the acade
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installing](#installing)
+    - [Contributing](#contributing)
   - [Data Collection](#data-collection)
   - [File Structure](#file-structure)
   - [Authors](#authors)
@@ -35,6 +36,10 @@ To run the code for this project, you will need to have the following software i
 - Install the required packages by running the following command in your terminal: pip install -r requirements.txt
 - Open the Jupyter Notebook files to run the code and perform data analysis
 - Open the Power BI file to visualize the data
+
+### Contributing
+
+To contribute to this project, please read the [contribution guidelines](CONTRIBUTING.md). Also check out the [code style guide](CODE_STYLEGUIDE.md) and the [visualization style guide](VIZ_STYLEGUIDE.md) for details on what we expect.
 
 ## Data Collection
 
