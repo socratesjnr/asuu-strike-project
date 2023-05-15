@@ -67,6 +67,7 @@ project analysis
 - Malik Akintola (Data Analyst)
 - Farook Ajose (Data Scientist)
 - Ibukun Akinleye 
+- Matthew Dada
 
 ## Acknowledgments
 
