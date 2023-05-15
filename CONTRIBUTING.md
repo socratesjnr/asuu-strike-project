@@ -10,6 +10,9 @@ We welcome contributions from the community to help make our investigation of th
   - [Current Status](#current-status)
   - [Issues and Bugs](#issues-and-bugs)
   - [Pull Requests](#pull-requests)
+  - [Commit Message Guidelines](#commit-message-guidelines)
+    - [Preferred commit examples](#preferred-commit-examples)
+    - [Don't commit like this](#dont-commit-like-this)
   - [Style Adherence](#style-adherence)
     - [Code Style Guide](#code-style-guide)
     - [Visualization Style Guide](#visualization-style-guide)
@@ -47,6 +50,53 @@ When creating a pull request, please provide as much detail as possible about th
 
 If you'd like to contribute data, please ensure that the data you're contributing is accurate and relevant to our investigation. If you're unsure about whether your data is appropriate, please reach out to one of our team members for guidance.
 
+## Commit Message Guidelines
+
+When making commits, it is important to follow these guidelines for clear and concise communication:
+
+- Use imperative verbs in the present tense (e.g., "Add feature" instead of "Added feature").
+- Limit the subject line to 50 characters or less.
+- Separate the subject line from the body with a blank line.
+- Use the body to explain what changes were made and why they were made.
+- Use bullet points or paragraphs for clarity and readability.
+- Use the issue tracker to reference related issues (e.g., "Fixes #123" or "Addresses issue #456").
+- Use a consistent and descriptive format for commit messages (e.g., "Add/Update/Delete/Refactor + file/feature/section").
+  
+### Preferred commit examples
+
+- Using git:
+  
+```git
+git commit -m "Add data visualization module with bar chart function
+
+This commit fixes #123 by adding a new module for data visualization, including a function to create bar charts. This will help us better understand and communicate the trends in our data. "
+
+```
+
+- Using GitHub/GitHub Desktop:
+
+![Example of a good commit](images/documentation/good_commit_example.jpg)
+
+### Don't commit like this
+
+```git
+Created using Colaboratory
+```
+
+```git
+Added visualization module
+```
+
+```git
+Update README.md
+```
+
+```git
+Add files via upload
+```
+
+By following these guidelines, we can ensure that commit messages are informative, easy to understand, and facilitate efficient collaboration.
+
 ## Style Adherence
 
 ### Code Style Guide
@@ -55,7 +105,7 @@ When contributing code to the project, please follow the code style guidelines o
 
 ### Visualization Style Guide
 
-To maintain consistency in the visualizations across the project, we kindly ask that all contributors adhere to the guidelines set out in the [Visualisation Style Guide](VIZ_STYLEGUIDE.md). This guide outlines the colors, fonts, and other design elements that we will use in our visualizations to ensure that all charts look similar and are part of the same project.
+To maintain consistency in the visualizations across the project, we kindly ask that all contributors adhere to the guidelines set out in the [Visualization Style Guide](VIZ_STYLEGUIDE.md). This guide outlines the colors, fonts, and other design elements that we will use in our visualizations to ensure that all charts look similar and are part of the same project.
 
 When creating visualizations, please reference the Visualisation Style Guide and use the specified colors, fonts, and design elements.
 
