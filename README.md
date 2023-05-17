@@ -93,6 +93,7 @@ asuu-strike-project
 ## Authors
 
 - [Farook Ajose](https://github.com/fkajose)
+- [Oluwaseyi Adaramola](http://github.com/socratesjnr)
 
 ## Acknowledgments
 
