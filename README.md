@@ -63,10 +63,8 @@ project analysis
 
 ## Authors
 
-- Oluwaseyi Adaramola (Project Manager)
-- Malik Akintola (Data Analyst)
-- Farook Ajose (Data Scientist)
-- Ibukun Akinleye 
+- [Farook Ajose](https://github.com/fkajose)
+- [Oluwaseyi Adaramola](http://github.com/socratesjnr)
 - [Matthew Dada](https://github.com/MatthewDada/)
 
 ## Acknowledgments
