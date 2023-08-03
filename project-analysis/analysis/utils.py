@@ -92,6 +92,59 @@ def display_dataframe(df, max_rows=10):
     display(df.head(max_rows))
 
 
+def plot_heatmap_new(data, x_var, y_var, target_feature, colour_map = 'magma_r',title = ''):
+    '''
+    Update to plot_heatmap
+
+    Plots a heatmap for two categorical variables, specifically using the count and mean of a target column. 
+    This helps check how to variables relate with respect to a third (numerical variable).
+
+    data: Dataframe containing the data
+    x_var : x-axis variable
+    y_var : y-axis variable
+    target_feature : any other column to perform a count and get the mean.
+    
+    '''
+
+    #prepare the data for use
+    df = data[[x_var, y_var, target_feature]]
+    
+    # performing a groupby on the data to get the number of occurrences and the average of the target feature by the other features
+    data_count = df.groupby([x_var, y_var]).count()
+    data_avg = df.groupby([x_var, y_var]).mean()
+
+    #Pivot the count data and fill any null value with zero
+    count_pivot = data_count.pivot_table(values = target_feature , index = y_var, columns = x_var)
+    count_pivot = count_pivot.fillna(value = 0)
+
+    #Pivot the average data and fill any null value with zero
+    avg_pivot = data_avg.pivot_table(values = target_feature , index = y_var, columns = x_var)
+    avg_pivot = avg_pivot.fillna(value = 0)
+
+    # Define a custom order for the x and y axes
+    x_order = ['Poorly', 'Moderately', 'Very']
+    y_order = ['Very', 'Moderately','Poorly' ]
+
+    # Rearrange the pivot tables based on the custom order of columns and index labels
+    count_pivot = count_pivot.reindex(columns=x_order, index=y_order)    
+    avg_pivot = avg_pivot.reindex(columns=x_order, index=y_order)
+
+     #create axes to plot
+    fig, axes = plt.subplots(1, 2, figsize = (15, 5))
+
+
+    #plot count data and avg data heatmaps
+    sns.heatmap(count_pivot,cmap = colour_map, annot = True, ax = axes[0])
+    axes[0].set_title('Occurrences')
+    sns.heatmap(avg_pivot,cmap = colour_map, annot = True, ax = axes[1])
+    axes[1].set_title(f'Average {target_feature}')
+    
+    #Setting a major title for both plots
+    fig.suptitle(f'Overview prep_before vs prep_after {title}', fontsize=16)
+    plt.subplots_adjust(wspace=0.8)
+
+
+
 # Add more functions as needed for your specific project
 
 # Example usage of utility functions
@@ -108,3 +161,7 @@ if __name__ == "__main__":
     filled_data = fill_missing_values(data, value=0)
     print("\nDataFrame after filling missing values:")
     print(filled_data)
+
+
+
+
