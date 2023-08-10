@@ -144,6 +144,31 @@ def plot_heatmap_new(data, x_var, y_var, target_feature, colour_map = 'magma_r',
     plt.subplots_adjust(wspace=0.8)
 
 
+def count_and_average(group, avg_col, dataframe):
+    '''
+    Plots a count and average plot n the same ax
+    group: The column to count, group by and get a reference average for.
+    avg_col: The column to get the mean for
+    ///
+    Example: ...
+    '''
+    
+    #getting the average
+    avg_course = dataframe.groupby(group).mean().reset_index()
+
+    #Plotting the count and average plots
+    plt.figure(figsize = (25, 12))
+    ax = sns.countplot(data = dataframe, x=group, label = f'Count of {group} by {group}', color = 'blue')
+    ax2 = ax.twinx()
+    sns.lineplot(x=group, y= avg_col,data = avg_course, ax=ax2, color='r', label = f'Average {avg_col} by {group}')
+    ax2.set_ylabel(f'average {avg_col}')
+    ax2.set_ylim(0, max(avg_course[avg_col]))
+
+    #setting the labels
+    lines, labels = ax.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax2.legend(lines + lines2, labels + labels2, loc='upper right')
+
 
 # Add more functions as needed for your specific project
 
