@@ -12,13 +12,13 @@ We will use the following colors in our visualizations:
     | Color Name | Color Sample |
     |------------|--------------|
     | Blue       | ![Blue](https://via.placeholder.com/50x20/558fd9/ffffff?text=+) |
-    | Cream      | ![Green](https://via.placeholder.com/50x20/fce5cd/000000?text=+) |
+    | Cream      | ![Cream](https://via.placeholder.com/50x20/fce5cd/000000?text=+) |
 
 - Secondary Colors
     | Color Name | Color Sample |
     |------------|--------------|
-    | Red     | ![Indigo](https://via.placeholder.com/50x20/7d191c/ffffff?text=+) |
-    | Green    | ![Magenta](https://via.placeholder.com/50x20/45916b/ffffff?text=+) |
+    | Red     | ![Red](https://via.placeholder.com/50x20/7d191c/ffffff?text=+) |
+    | Green    | ![Green](https://via.placeholder.com/50x20/45916b/ffffff?text=+) |
 
 ## Font
 
@@ -38,8 +38,5 @@ Here are some examples of visualizations that follow our style guide:
 
 <p align="center">
   <img src="images/documentation/viz_sample_1.jpg" alt="Example Chart 1">
-</p>
-
-<p align="center">
   <img src="images/documentation/viz_sample_2.jpg" alt="Example Chart 2">
 </p>
