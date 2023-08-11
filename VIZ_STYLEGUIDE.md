@@ -1,5 +1,6 @@
 # Visualization Style Guide
 
+
 <p align="center">
   <img src="images/documentation/viz_style_guide.jpg" alt="Viz Style Guide">
 </p>
@@ -23,6 +24,7 @@ We will use the following colors in our visualizations:
 ## Font
 
 We will use **Verdana** as our font for all visualizations.
+
 
 ## Charts
 

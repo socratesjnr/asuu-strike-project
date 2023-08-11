@@ -6,6 +6,20 @@ Investigating the Effect of the 2022 ASUU Strike on the Academic Performance of 
 
 This project aims to investigate the impact of the 2022 ASUU strike on the academic performance of students at the University of Lagos. We plan to use Python and Power BI for data analysis and visualization, and will collect data via a Google Form. The project will consist of four phases: planning and preparation, data collection and preparation, modeling and analysis, and reporting and presentation.
 
+## Table of Contents
+
+- [asuu-strike-project](#asuu-strike-project)
+  - [Project Description](#project-description)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installing](#installing)
+    - [Contributing](#contributing)
+  - [Data Collection](#data-collection)
+  - [File Structure](#file-structure)
+  - [Authors](#authors)
+  - [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 ### Prerequisites
@@ -23,50 +37,63 @@ To run the code for this project, you will need to have the following software i
 - Open the Jupyter Notebook files to run the code and perform data analysis
 - Open the Power BI file to visualize the data
 
+### Contributing
+
+To contribute to this project, please read the [contribution guidelines](CONTRIBUTING.md). Also check out the [code style guide](CODE_STYLEGUIDE.md) and the [visualization style guide](VIZ_STYLEGUIDE.md) for details on what we expect.
+
 ## Data Collection
 
-We will be using a Google Form to collect data for this project. The link to the form will be distributed to relevant stakeholders, including students, lecturers, and administrators. 
-The data collection for this project is live, to participate you can click on this : https://forms.gle/1XZBC5EkMbsRTYJ4A to fill the google form.
+We will be using a Google Form to collect data for this project. The link to the form will be distributed to relevant stakeholders, including students, lecturers, and administrators.
+The data collection for this project is live, to participate you can click on this : <https://forms.gle/1XZBC5EkMbsRTYJ4A> to fill the google form.
 
 ## File Structure
 
 ```python
-mock analysis
-│── sample.csv        # Raw data collected from Google Forms
-│── expanded_sample.csv # Cleaned and expamded data for analysis
-│── test_eda.ipynb   # Jupyter Notebook for exploratory data analysis
-│── test_modeling.ipynb      # Jupyter Notebook for modeling and analysis
-│── test_dashboard.pbix      # Power BI file for visualizing the data
-└── README.md                # Project description and instructions
-├── Team_Management
-│   ├── assigned_roles.csv      # Roles assigned to team members 
-│   └── role_assignment.ipynb  # Roles assigned to team members 
-    └── role_summary.csv   # Description of roles
-├── Mailing 
-│   ├──  Bounced_email_address     # Invalid mails 
-│   └──  Student_distribution.ip # Distribution of student mails 
-    └──  Student_mails.csv    # File containing the student mail 
-    └──  Valid_student_mails.com     # Mailing list 
+asuu-strike-project
+│   README.md               # Project description and instructions
+│   CONTRIBUTING.md         # Guidelines for contributing to the project
+│   CODE_STYLEGUIDE.md      # Guidelines for code style and formatting
+│   LICENSE.md              # License for the project
+|   .idea                   # Directory to store project-specific settings
+│   .gitignore              # Files and directories to be ignored by Git
+│
+├── mailing
+│   ├── bounced_email_address.csv     # Invalid mails
+│   ├── student_distribution.ipynb   # Distribution of student mails
+│   ├── student_mails.csv            # File containing the student mail
+│   └── valid_student_mails.csv      # Mailing list
+│
+├── mock analysis
+│   ├── sample.csv                # Raw data collected from Google Forms
+│   ├── expanded_sample.csv       # Cleaned and expanded data for analysis
+│   ├── test_eda.ipynb            # Jupyter Notebook for exploratory data analysis
+│   ├── test_modeling.ipynb        # Jupyter Notebook for modeling and analysis
+│   ├── test_dashboard.pbix        # Power BI file for visualizing the data
+│   └── README.md                 # Description of the mock analysis folder
+│
+├── team-management
+│   ├── assigned_roles.csv        # Roles assigned to team members
+│   ├── role_assignment.ipynb     # Jupyter Notebook for assigning roles to team members
+│   └── role_summary.csv          # Description of roles
+│
+└── project analysis
+    ├── data
+    │   ├── raw_data.csv           # Raw data collected from Google Forms
+    │   └── cleaned_data.csv       # Cleaned data ready for analysis
+    ├── analysis
+    │   ├── exploratory_data_analysis.ipynb   # Jupyter Notebook for exploratory data analysis
+    │   └── modeling.ipynb          # Jupyter Notebook for modeling and analysis
+    ├── results
+    │   └── dashboard.pbix          # Power BI file for visualizing the data
+    ├── requirements.txt            # Required Python packages for the project
+    └── README.md                   # Description of the project analysis folder
 
-project analysis
-├── data
-│   ├── raw_data.csv        # Raw data collected from Google Forms
-│   └── cleaned_data.csv    # Cleaned data ready for analysis
-├── analysis
-│   ├── exploratory_data_analysis.ipynb   # Jupyter Notebook for exploratory data analysis
-│   └── modeling.ipynb      # Jupyter Notebook for modeling and analysis
-├── results
-│   └── dashboard.pbix      # Power BI file for visualizing the data
-├── requirements.txt        # Required Python packages for the project
-└── README.md               # Project description and instructions
 ```
 
 ## Authors
 
-- Oluwaseyi Adaramola (Project Manager)
-- Malik Akintola (Data Analyst)
-- Farook Ajose (Data Scientist)
-- Ibukun Akinleye 
+- [Farook Ajose](https://github.com/fkajose)
+- [Oluwaseyi Adaramola](http://github.com/socratesjnr)
 
 ## Acknowledgments
 
