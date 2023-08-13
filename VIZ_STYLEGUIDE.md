@@ -1,5 +1,10 @@
 # Visualization Style Guide
 
+
+<p align="center">
+  <img src="images/documentation/viz_style_guide.jpg" alt="Viz Style Guide">
+</p>
+
 ## Color Palette
 
 We will use the following colors in our visualizations:
@@ -7,26 +12,25 @@ We will use the following colors in our visualizations:
 - Primary Colors
     | Color Name | Color Sample |
     |------------|--------------|
-    | Blue       | ![Blue](https://via.placeholder.com/50x20/007bff/000000?text=+) |
-    | Green      | ![Green](https://via.placeholder.com/50x20/28a745/000000?text=+) |
+    | Blue       | ![Blue](https://via.placeholder.com/50x20/558fd9/ffffff?text=+) |
+    | Cream      | ![Cream](https://via.placeholder.com/50x20/fce5cd/000000?text=+) |
 
 - Secondary Colors
     | Color Name | Color Sample |
     |------------|--------------|
-    | Indigo     | ![Indigo](https://via.placeholder.com/50x20/6610f2/000000?text=+) |
-    | Magenta    | ![Magenta](https://via.placeholder.com/50x20/FF00FF/000000?text=+) |
-    | Pink    | ![Pink](https://via.placeholder.com/50x20/ff8fc3/000000?text=+) |
+    | Red     | ![Red](https://via.placeholder.com/50x20/7d191c/ffffff?text=+) |
+    | Green    | ![Green](https://via.placeholder.com/50x20/45916b/ffffff?text=+) |
 
 ## Font
 
-We will use **Roboto** as our font for all visualizations.
+We will use **Verdana** as our font for all visualizations.
+
 
 ## Charts
 
 When creating charts, we will follow these guidelines:
 
 - Use clear and concise titles and labels for axes and legends
-- Include units of measurement when appropriate
 - Avoid cluttering charts with too much information
 - Ensure the chart's color scheme is consistent with our color palette
 
@@ -35,9 +39,6 @@ When creating charts, we will follow these guidelines:
 Here are some examples of visualizations that follow our style guide:
 
 <p align="center">
-  <img src="example-chart-1.png" alt="Example Chart 1">
-</p>
-
-<p align="center">
-  <img src="example-chart-2.png" alt="Example Chart 2">
+  <img src="images/documentation/viz_sample_1.jpg" alt="Example Chart 1">
+  <img src="images/documentation/viz_sample_2.jpg" alt="Example Chart 2">
 </p>
