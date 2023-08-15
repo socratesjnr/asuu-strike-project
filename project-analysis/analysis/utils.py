@@ -10,6 +10,9 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy.stats import f_oneway, kruskal, ttest_ind, anderson
+from scipy import stats
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 
 # Data cleaning and preprocessing functions
@@ -85,7 +88,6 @@ def plot_heatmap(data, x_var, y_var, count_var, colour_map):
 def save_plot(fig, filename):
     """Save a matplotlib figure to a file."""
     fig.savefig(filename, bbox_inches="tight")
-
 
 def display_dataframe(df, max_rows=10):
     """Display the first few rows of a DataFrame."""
@@ -188,5 +190,140 @@ if __name__ == "__main__":
     print(filled_data)
 
 
+def anova_assumptions_test(feature, target, df):
+    '''
+    This function tests the assumptions required for the ANOVA statistical test.
 
+    feature: The feature being tested for ANOVA assumptions.
+    target: The column to aggregate for ANOVA.
+    df: The dataframe containing the data.
+
+    Returns one of four strings:
+    1. The given data passes both tests of homoscedasticity and normality.
+    2. The given data passes the test of homoscedasticity but fails the test of normality.
+    3. The given data passes the test of normality but fails the test of homoscedasticity.
+    4. The given data fails both tests of homoscedasticity and normality.
+    '''
+    # Homoscedasticity
+    feature_std = df.groupby(feature)[target].std()
+    max_std = feature_std.max()
+    min_std = feature_std.min()
+
+    # Normality
+    normality = anderson_darling(df=df, feature=feature, target=target)
+
+    if min_std * 2 >= max_std and normality:
+        return 'The given data passes both tests of homoscedasticity and normality.'
+    elif min_std * 2 >= max_std and not normality:
+        return 'The given data passes the test of homoscedasticity but fails the test of normality.'
+    elif min_std * 2 < max_std and normality:
+        return 'The given data passes the test of normality but fails the test of homoscedasticity.'
+    else:
+        return 'The given data fails both tests of homoscedasticity and normality.'
+
+
+def anderson_darling(df,feature,alpha,target):
+  '''
+  This function tests for normality in the df.
+  
+  df: The dataframe that contains the df you want to test.
+  feature: The feature being tested for normality.
+  target: The column to aggregate.
+  alpha: The significance level for the statistical test. Default 0.05 or 5%.                                                   
+  alpha should be inserted as a percentage in integer form, eg, 5% should be inserted as 5.
+  
+  Returns: True or False
+  True means that the data follows a normal distribution.
+  False means that the data doesn't follows a normal distribution.
+  '''
+  unique = df[feature].unique().to_list()
+  counter = []
+
+  for unique_value in unique:
+    test_data = df[df[feature]==unique_value][target]
+    
+    if len(test_data) < 5:
+        pass
+    
+    else:
+        result = anderson(test_data)
+        test_statistic = result.statistic
+        critical_values = list(result.critical_values)
+        significance_level = list(result.significance_level)
+        index_sig_level = significance_level.index(alpha)
+
+        if test_statistic <= critical_values[index_sig_level]:
+            # It follows a normal distribution.
+            counter.append(True)
+        
+        else:
+            # It does not follow a normal distribution
+            pass
+    
+  if False in counter:
+      return False
+  else:
+      return True
+  
+
+def perform_one_way_anova(df, feature, target):
+    '''
+    Perform a one-way ANOVA test to assess the equality of means among multiple groups.
+    
+    Parameters:
+        df (DataFrame): The DataFrame containing the data.
+        feature (str): The column name for the categorical levels.
+        target (str): The column name for the continuous variable (CGPA change).
+
+    Returns:
+        result (F_onewayResult): The result of the one-way ANOVA test.
+    '''
+    unique_levels = df[feature].unique()
+    levels_data = {level: df[df[feature] == level][target] for level in unique_levels}
+    
+    result = f_oneway(*levels_data.values())
+    
+    return (f'ANOVA F-statistic:", {result.statistic}, "ANOVA p-value:", {result.pvalue}')
+
+
+def perform_pairwise_tukeyhsd(df, feature, target):
+    '''
+    Perform pairwise Tukey's Honestly Significant Difference (HSD) test to compare group means.
+
+    Parameters:
+        df (DataFrame): The DataFrame containing the data.
+        feature (str): The column name for the categorical groups.
+        target (str): The column name for the data to be compared.
+
+    Returns:
+        tukey_result (MultiComparison): The result of the pairwise Tukey's HSD test.
+    '''
+    tukey_result = pairwise_tukeyhsd(
+        endog=df[target],
+        groups=df[feature]
+    )
+    print(tukey_result)
+    
+    
+def perform_kruskal_willis_test(df, feature, target, min_count=5):
+    '''
+    Perform the Kruskal-Wallis test after filtering out groups with low counts.
+
+    Parameters:
+        df (DataFrame): The DataFrame containing the data.
+        feature (str): The column name for the categorical groups.
+        target (str): The column name for the data to be compared.
+        min_count (int): Minimum count required for each group. Groups with counts below this are dropped.
+
+    Returns:
+        kruskal_result (KruskalResult): The result of the Kruskal-Wallis test.
+    '''
+    group_counts = df[feature].value_counts()
+    low_count_groups = group_counts.index[group_counts < min_count]
+    filtered_df = df[~df[feature].isin(low_count_groups)]
+
+    groups_data = {group: filtered_df[filtered_df[feature] == group][target] for group in filtered_df[feature].unique()}
+
+    kruskal_result = kruskal(*groups_data.values())
+    return (f"Kruskal-Wallis Test statistic:, {kruskal_result.statistic}, Kruskal-Wallis Test p-value:, {kruskal_result.pvalue}")
 
