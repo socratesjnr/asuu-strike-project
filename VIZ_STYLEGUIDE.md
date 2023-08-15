@@ -11,13 +11,13 @@ We will use the following colors in our visualizations:
 - Primary Colors
     | Color Name | Color Sample | Color Hex |
     |------------|--------------|--------------|
-    | Blue       | ![Blue](https://via.placeholder.com/50x20/558fd9/ffffff?text=+) | #558fd9 |
+    | Red     | ![Red](https://via.placeholder.com/50x20/cf8989/ffffff?text=+) | #cf8989 |
     | Cream      | ![Cream](https://via.placeholder.com/50x20/f9cb9c/000000?text=+) | #f9cb9c |
 
 - Secondary Colors
     | Color Name | Color Sample | Color Hex |
     |------------|--------------|---------|
-    | Red     | ![Red](https://via.placeholder.com/50x20/7d191c/ffffff?text=+) | #7d191c |
+    | Blue       | ![Blue](https://via.placeholder.com/50x20/558fd9/ffffff?text=+) | #558fd9 |
     | Green    | ![Green](https://via.placeholder.com/50x20/45818e/ffffff?text=+) |45818e |
 
 ## Font
