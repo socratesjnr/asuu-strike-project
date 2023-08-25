@@ -94,7 +94,7 @@ def display_dataframe(df, max_rows=10):
     display(df.head(max_rows))
 
 
-def plot_heatmap_new(data, x_var, y_var, target_feature, colour_map = 'magma_r',title = ''):
+def plot_heatmap_new(data, x_var, y_var, target_feature, colour_map = 'RdBu',title = ''):
     '''
     Update to plot_heatmap
 
@@ -160,9 +160,9 @@ def count_and_average(group, avg_col, dataframe):
 
     #Plotting the count and average plots
     plt.figure(figsize = (25, 12))
-    ax = sns.countplot(data = dataframe, x=group, label = f'Count of {group} by {group}', color = 'blue')
+    ax = sns.countplot(data = dataframe, x=group, label = f'Count of {group} by {group}')
     ax2 = ax.twinx()
-    sns.lineplot(x=group, y= avg_col,data = avg_course, ax=ax2, color='r', label = f'Average {avg_col} by {group}')
+    sns.lineplot(x=group, y= avg_col,data = avg_course, ax=ax2, label = f'Average {avg_col} by {group}')
     ax2.set_ylabel(f'average {avg_col}')
     ax2.set_ylim(0, max(avg_course[avg_col]))
 
